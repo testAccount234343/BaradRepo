@@ -1,6 +1,13 @@
 /* Import The JetBrains Mono Font From Google Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+/* Variables */
+:root {
+    --primary-background-color: #1C1F21;
+    --primary-text-color: #E1E2E2;
+    --secondary-text-color: #E4FF68;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,3 +18,120 @@
 body {
     font-family: "JetBrains Mono", sans-serif;
 }
+
+/* Header Style */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+/* Header Navbar Style */
+
+.header_navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_logo h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nav_items {
+    display: flex;
+}
+
+.nav_items a {
+    margin-right: 10px;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nav_items a:first-child {
+    margin-right: 10px;
+    color: var(--primary-background-color);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 30px;
+    background-color: var(--primary-text-color);
+    border-radius: 15px;
+}
+
+.nav_items a:hover {
+    background-color: var(--secondary-text-color);
+    color: var(--primary-background-color);
+    transition: .3s all;
+    box-shadow: 0px 10px 5px rgba(255, 255, 255, 0.1);
+
+}
+
+.nav_items a:hover:first-child {
+    background-color: var(--primary-text-color);
+    color: var(--primary-background-color);
+}
+
+.nav_auth {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav_auth button {
+    font-size: 16px;
+    padding: 8px 30px;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--primary-text-color);
+    transition: 1s all ease;
+}
+
+.nav_auth button:hover {
+    background-color: #E4FF68;
+    color: var(--primary-background-color);
+}
+
+.header_body_text {
+    text-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+}
+
+/* Header Body Style */
+.header_body {
+    height: calc(100vh - 10vh);
+    display: flex;
+}
+
+.header_body_text {
+    text-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.header_body_text h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header_body_img {
+    justify-content: center;
+    align-items: end;
+}
+
+/* .header_body_img img {
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
+} */

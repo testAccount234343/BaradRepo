@@ -1,12 +1,10 @@
-import BodyCards from "./Components/BodyCards";
-import HeaderNavbar from "./Components/HeaderNavbar";
 import "./assets/Css/App.css";
+import HomePage from "./Pages/HomePage";
 function App() {
   return (
     <>
-      {/* Header Navbar Component */}
-      <HeaderNavbar />
-      <BodyCards />
+      {/* Home Page */}
+      <HomePage />
     </>
   );
 }

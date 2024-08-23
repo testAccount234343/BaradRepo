@@ -1,42 +1,36 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const HeaderNavbar = () => {
   return (
-    <Navbar
-      variant="dark"
-      data-bs-theme="dark"
-      expand="lg"
-      className="bg-body-tertiary"
-    >
-      <Container>
-        <Navbar.Brand href="#">Barad</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">Link</Nav.Link>
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <nav className="header_navbar">
+        <Container>
+          <Row>
+            <Col lg={4} sm={12} md={12}>
+              <div className="nav_logo">
+                <h1>Barad</h1>
+              </div>
+            </Col>
+            <Col lg={4} sm={12} md={12}>
+              <div className="nav_items">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Contact">Contact</a>
+                <a href="#Review">Review</a>
+              </div>
+            </Col>
+            <Col lg={4} sm={12} md={12} className="p-0">
+              <div className="nav_auth">
+                <button>Sign In</button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </nav>
+    </>
   );
 };
 
