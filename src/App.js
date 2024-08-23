@@ -1,10 +1,11 @@
+import HeaderNavbar from "./Components/HeaderNavbar";
+import "./assets/Css/App.css";
 function App() {
   return (
-    <div>
-      {/* Added Test Text */}
-      <h1>Hi This Is v1.0 Of Barad-Repo Project</h1>
-    </div>
+    <>
+      {/* Header Navbar Component */}
+      <HeaderNavbar />
+    </>
   );
 }
-
 export default App;
